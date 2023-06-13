@@ -1,12 +1,11 @@
-import React, { ReactNode } from "react";
-import { FaTwitter, FaTwitterSquare } from "react-icons/fa";
+import { ReactNode } from "react";
 
 type Props = {
     children: ReactNode;
 };
 const IconContainer = ({ children }: Props) => {
     return (
-        <div className='text-white p-3 grid items-center rounded-md border-gray-700 border text-lg'>
+        <div className='aspect-square text-white flex justify-center items-center rounded-lg border-gray-700 border text-2xl bg-neutral-800 cursor-pointer'>
             {children}
         </div>
     );
