@@ -22,3 +22,26 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+@layer components {
+    .contact-card-icon-container {
+        @apply rounded-xl bg-orange-400/30 p-5 border border-neutral-100/20 cursor-pointer transition-all hover:text-orange-900 hover:bg-orange-200;
+    }
+    .background-animate {
+        background-size: 200%;
+
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s linear infinite;
+    }
+
+    @keyframes AnimationName {
+        0%,
+        100% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { AiOutlineMail } from "react-icons/ai";
 import { BsSkype } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FiArrowUpRight, FiAtSign } from "react-icons/fi";
@@ -7,6 +6,13 @@ import IconContainer from "./IconContainer";
 
 export default function Home() {
     // TODO: add secondary primary color profiles to tailwind config
+    // TODO: Fix Responsive
+    // TODO: for borders -> have 2 types of border radius - 32 - 8
+    // TODO: radial gradient for cards
+    // TODO: Dark mode theme
+
+    // TODO: for background - idea1: gif with gradient animation - idea2: try gradient with noise - idea3: brighter background better card-shadows
+    // TODO: gradient animation for the first card
     return (
         <main className='bg-black w-full h-full text-neutral-600 sm:text-sm md:text-xl'>
             <div className='px-60'>
@@ -22,7 +28,7 @@ export default function Home() {
                 <div>
                     <div className='grid gap-4 grid-cols-8'>
                         {/* First Card */}
-                        <div className='col-span-6 rounded-bl-3xl rounded-tr-3xl rounded-tl-lg rounded-br-lg bg-gradient-to-tl from-stone-500 from-10% via-stone-700 via-30% to-stone-950  p-12'>
+                        <div className='col-span-6 rounded-bl-3xl rounded-tr-3xl rounded-tl-lg rounded-br-lg bg-gradient-to-tl from-stone-500 via-stone-700 to-stone-950  p-12 bg-white background-animate'>
                             {/* card header: */}
                             <div className='flex py-5'>
                                 <div className='flex gap-5 items-center'>
@@ -92,10 +98,10 @@ export default function Home() {
 
                         {/* Fourth Card */}
                         <div className='col-span-5 bg-black rounded rounded-br-3xl p-5 pb-0 border border-gray-600/30 flex flex-col gap-3'>
-                            <div className='flex gap-3 justify-start items-center cursor-pointer'>
+                            <div className='flex gap-3 justify-start items-center cursor-pointer group/current'>
                                 <h1 className='text-white'>Atlas AI</h1>
-                                <div className='aspect-square rounded-full bg-zinc-800'>
-                                    <FiArrowUpRight className='text-purple-300/80 m-1' />
+                                <div className='text-purple-300/80 aspect-square rounded-full bg-zinc-800 group-hover/current:bg-purple-300/80 group-hover/current:text-black transition-all ease-in-out'>
+                                    <FiArrowUpRight className='m-1' />
                                 </div>
                             </div>
                             <h4 className='text-neutral-400 text-sm'>
@@ -135,10 +141,10 @@ export default function Home() {
                                 Make a contact via email or Skype.
                             </p>
                             <div className='flex flex-col gap-1'>
-                                <div className='rounded-xl bg-orange-400/30 p-5 border border-neutral-100/20 cursor-pointer'>
+                                <div className='contact-card-icon-container'>
                                     <FiAtSign />
                                 </div>
-                                <div className='rounded-xl bg-orange-400/30 p-5  border border-neutral-100/20 cursor-pointer'>
+                                <div className='contact-card-icon-container'>
                                     <BsSkype />
                                 </div>
                             </div>
