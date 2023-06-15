@@ -12,7 +12,6 @@ export default function Home() {
     // TODO: Dark mode theme
 
     // TODO: for background - idea1: gif with gradient animation - idea2: try gradient with noise - idea3: brighter background better card-shadows
-    // TODO: gradient animation for the first card
     return (
         <main className='bg-black w-full h-full text-neutral-600 sm:text-sm md:text-xl'>
             <div className='px-60'>
