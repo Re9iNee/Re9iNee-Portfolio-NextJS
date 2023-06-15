@@ -13,7 +13,7 @@ export default function Home() {
 
     // TODO: for background - idea1: gif with gradient animation - idea2: try gradient with noise - idea3: brighter background better card-shadows
     return (
-        <main className='bg-black w-full h-full text-neutral-600 sm:text-sm md:text-xl'>
+        <main className='w-full h-full text-neutral-600 sm:text-sm md:text-xl max-w-7xl'>
             <div className='px-60'>
                 <header className='flex justify-between py-32'>
                     <div>
