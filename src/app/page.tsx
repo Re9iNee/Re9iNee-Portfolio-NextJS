@@ -4,6 +4,9 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FiArrowUpRight, FiAtSign } from "react-icons/fi";
 import IconContainer from "./IconContainer";
 
+// FIXME: a single component, really? || Improve readability
+// TODO: showoff Prisma typeGraphQL as a contributor
+
 export default function Home() {
     // TODO: add secondary primary color profiles to tailwind config
     // TODO: Fix Responsive
@@ -98,7 +101,7 @@ export default function Home() {
                         {/* Fourth Card */}
                         <div className='col-span-5 bg-black rounded rounded-br-3xl p-5 pb-0 border border-gray-600/30 flex flex-col gap-3'>
                             <div className='flex gap-3 justify-start items-center cursor-pointer group/current'>
-                                <h1 className='text-white'>Atlas AI</h1>
+                                <h1 className='text-white'>Mora Website</h1>
                                 <div className='text-purple-300/80 aspect-square rounded-full bg-zinc-800 group-hover/current:bg-purple-300/80 group-hover/current:text-black transition-all ease-in-out'>
                                     <FiArrowUpRight className='m-1' />
                                 </div>
@@ -109,10 +112,10 @@ export default function Home() {
                             <div className='self-center'>
                                 <Image
                                     width={500}
-                                    height={0}
+                                    height={100}
                                     className='rounded-t-xl'
-                                    src={"/website.png"}
-                                    alt='I dont know yet'
+                                    src={"/mora-website.png"}
+                                    alt='A Picture of Prisma Graphql Website'
                                 />
                             </div>
                         </div>
