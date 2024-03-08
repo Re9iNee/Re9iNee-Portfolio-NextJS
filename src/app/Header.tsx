@@ -1,4 +1,5 @@
 import { ModeToggle } from "@/components/dark-mode-toggle";
+import { MainNav } from "@/components/main-nav";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
@@ -28,11 +29,7 @@ function Header() {
           Say Hi
         </Link>
 
-        <Link href='/experiences' className='hover:text-white'>
-          Experiences
-        </Link>
-        <div className='hover:text-white'>Skills</div>
-        <div className='hover:text-white'>Contact</div>
+        <MainNav />
 
         <ModeToggle />
       </div>
