@@ -3,46 +3,37 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
-
-body {
-    color: rgb(var(--foreground-rgb));
-
-    width: 100vw;
-    height: max-content;
-    @apply bg-black grid place-items-center;
-}
-
 @layer components {
-    .contact-card-icon-container {
-        @apply rounded-xl bg-orange-400/30 p-5 border border-neutral-100/20 cursor-pointer transition-all hover:text-orange-900 hover:bg-orange-200;
-    }
-    .background-animate {
-        background-size: 200%;
+  .contact-card-icon-container {
+    @apply rounded-xl bg-orange-400/30 p-5 border border-neutral-100/20 cursor-pointer transition-all hover:text-orange-900 hover:bg-orange-200;
+  }
+  .background-animate {
+    background-size: 200%;
 
-        -webkit-animation: AnimationName 5s ease infinite;
-        -moz-animation: AnimationName 5s ease infinite;
-        animation: AnimationName 5s linear infinite;
-    }
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s linear infinite;
+  }
 
-    @keyframes AnimationName {
-        0%,
-        100% {
-            background-position: 0% 0%;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 0%;
     }
+    50% {
+      background-position: 100% 100%;
+    }
+  }
 }
