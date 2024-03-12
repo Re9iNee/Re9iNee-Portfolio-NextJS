@@ -46,10 +46,12 @@ export default function Home() {
                   </div>
 
                   <div className='flex flex-col'>
-                    <span className='text-white text-3xl'>
-                      Hi, I&apos;m Reza.
+                    <span className='text-white text-3xl'>About Me</span>
+                    <span className='text-sm'>
+                      {/* calculate age */}
+                      {new Date().getFullYear() - 1997} years old, Full Stack
+                      Developer
                     </span>
-                    <span className='text-sm'>Front-end developer</span>
                   </div>
                 </div>
                 <div className='flex gap-1 flex-grow justify-end'>
