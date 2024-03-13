@@ -46,10 +46,12 @@ export default function Home() {
                   </div>
 
                   <div className='flex flex-col'>
-                    <span className='text-white text-3xl'>
-                      Hi, I&apos;m Reza.
+                    <span className='text-white text-3xl'>About Me</span>
+                    <span className='text-sm'>
+                      {/* calculate age */}
+                      {new Date().getFullYear() - 1997} years old, Full Stack
+                      Developer
                     </span>
-                    <span className='text-sm'>Front-end developer</span>
                   </div>
                 </div>
                 <div className='flex gap-1 flex-grow justify-end'>
@@ -108,7 +110,7 @@ export default function Home() {
 
             {/* Fourth Card */}
             <div
-              className='col-span-full bg-black rounded rounded-br-3xl p-5 pb-0 border border-gray-600/30 flex flex-col gap-3
+              className='col-span-full bg-background rounded rounded-br-3xl p-5 pb-0 border border-gray-600/30 flex flex-col gap-3
               md:col-span-5
               '
             >
@@ -134,7 +136,7 @@ export default function Home() {
 
             {/* Fifth Card */}
             <div
-              className='col-span-full bg-black rounded-tr-3xl rounded-bl-xl p-5 border border-gray-600/30 py-10
+              className='col-span-full bg-background rounded-tr-3xl rounded-bl-xl p-5 border border-gray-600/30 py-10
               md:col-span-6
               '
             >
