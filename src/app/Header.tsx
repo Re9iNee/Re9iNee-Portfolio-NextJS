@@ -11,10 +11,10 @@ const email = {
 
 function Header() {
   return (
-    <header className='flex justify-between py-32'>
-      <div>
+    <header className='flex justify-between items-center sticky max-w-screen-2xl mx-auto py-14'>
+      <Link href='/' className='hover:underline'>
         I&apos;m <span className='text-white'>Reza</span>, Full Stack Developer.
-      </div>
+      </Link>
       <div className='flex gap-4 cursor-pointer items-center'>
         <Link
           href={`mailto:attarzadeh76@gmail.com?subject=${email.subject}&body=${email.body}`}
@@ -28,6 +28,9 @@ function Header() {
           Say Hi
         </Link>
 
+        <Link href='/experiences' className='hover:text-white'>
+          Experiences
+        </Link>
         <div className='hover:text-white'>Skills</div>
         <div className='hover:text-white'>Contact</div>
 

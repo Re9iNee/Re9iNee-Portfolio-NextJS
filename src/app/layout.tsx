@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import Header from "./Header";
 
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
-          "w-screen min-h-screen grid place-items-center"
+          "w-screen max-w-screen-2xl mx-auto"
         )}
       >
         <ThemeProvider
@@ -30,6 +31,7 @@ export default function RootLayout({
           defaultTheme='system'
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>

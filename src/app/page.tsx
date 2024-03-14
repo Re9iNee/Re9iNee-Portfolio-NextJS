@@ -18,13 +18,12 @@ export default function Home() {
   // TODO: for background - idea1: gif with gradient animation - idea2: try gradient with noise - idea3: brighter background better card-shadows
   return (
     <main
-      className='max-w-screen-2xl text-neutral-600
+      className='grid place-items-center max-w-screen-2xl text-neutral-600
       sm:text-sm
       md:text-xl
       '
     >
       <div className='mx-auto px-6'>
-        <Header />
         <div>
           <div className='grid gap-4 grid-cols-8'>
             {/* First Card */}
