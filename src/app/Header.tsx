@@ -1,5 +1,7 @@
 import { ModeToggle } from "@/components/dark-mode-toggle";
-import { Button, buttonVariants } from "@/components/ui/button";
+import HomepageButton from "@/components/homepage-button";
+import { MainNav } from "@/components/main-nav";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
@@ -12,9 +14,8 @@ const email = {
 function Header() {
   return (
     <header className='flex justify-between items-center sticky max-w-screen-2xl mx-auto py-14'>
-      <Link href='/' className='hover:underline'>
-        I&apos;m <span className='text-white'>Reza</span>, Full Stack Developer.
-      </Link>
+      <HomepageButton />
+
       <div className='flex gap-4 cursor-pointer items-center'>
         <Link
           href={`mailto:attarzadeh76@gmail.com?subject=${email.subject}&body=${email.body}`}
@@ -28,11 +29,7 @@ function Header() {
           Say Hi
         </Link>
 
-        <Link href='/experiences' className='hover:text-white'>
-          Experiences
-        </Link>
-        <div className='hover:text-white'>Skills</div>
-        <div className='hover:text-white'>Contact</div>
+        <MainNav />
 
         <ModeToggle />
       </div>
