@@ -13,7 +13,7 @@ const email = {
 
 function Header() {
   return (
-    <header className='flex justify-between items-center sticky max-w-screen-2xl mx-auto py-14'>
+    <header className='flex justify-between items-center sticky py-14'>
       <HomepageButton />
 
       <div className='flex gap-4 cursor-pointer items-center'>

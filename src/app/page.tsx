@@ -18,7 +18,7 @@ export default function Home() {
   // TODO: for background - idea1: gif with gradient animation - idea2: try gradient with noise - idea3: brighter background better card-shadows
   return (
     <main
-      className='grid place-items-center max-w-screen-2xl text-neutral-600
+      className='grid place-items-center text-neutral-600
       sm:text-sm
       md:text-xl
       '
@@ -99,7 +99,7 @@ export default function Home() {
             >
               <h1 className='text-4xl font-semibold mt-3 mb-5 text-purple-200 max-w-xs'>
                 Currently I&apos;m working on{" "}
-                <span className='text-white'>Atlas AI</span>
+                <span className='text-primary'>Atlas AI</span>
               </h1>
               <h4 className='text-purple-300 max-w-xs'>
                 An AI Wiki and an area to learn prompts and how you can interact
@@ -114,7 +114,7 @@ export default function Home() {
               '
             >
               <div className='flex gap-3 justify-start items-center cursor-pointer group/current'>
-                <h1 className='text-white'>Mora Website</h1>
+                <h1 className='text-primary'>Mora Website</h1>
                 <div className='text-purple-300/80 aspect-square rounded-full bg-zinc-800 group-hover/current:bg-purple-300/80 group-hover/current:text-black transition-all ease-in-out'>
                   <FiArrowUpRight className='m-1' />
                 </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 <h3 className='text-gray-300 text-sm mb-2'>
                   I constantly try to improve myself
                 </h3>
-                <h1 className='text-3xl text-white'>
+                <h1 className='text-3xl text-primary'>
                   Currently, I&apos;m Learning Solidity.
                 </h1>
                 <h4 className='text-gray-400 text-md'>
@@ -158,7 +158,7 @@ export default function Home() {
               md:col-span-2
               '
             >
-              <h1 className='text-white text-2xl'>Contact me</h1>
+              <h1 className='text-secondary text-2xl'>Contact me</h1>
               <p className='text-md text-orange-200'>
                 Make a contact via email or Skype.
               </p>

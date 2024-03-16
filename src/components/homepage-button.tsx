@@ -13,7 +13,7 @@ function HomepageButton() {
     >
       {pathname === "/" ? (
         <>
-          I&apos;m <span className='text-white'>Reza</span>, Full Stack
+          I&apos;m <span className='text-primary'>Reza</span>, Full Stack
           Developer.
         </>
       ) : (
