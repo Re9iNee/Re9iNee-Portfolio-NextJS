@@ -9,7 +9,7 @@ import Link from "next/link";
 function ExperiencesPage() {
   return (
     <div>
-      <H2>About Me</H2>
+      {/* <H2>About Me</H2>
       <UL>
         <li>
           🌐 8 years of specialized experience in Next.js, React, and
@@ -29,19 +29,7 @@ function ExperiencesPage() {
         </li>
       </UL>
 
-      <H2>Skills</H2>
-      <Muted>sorted by category</Muted>
-      <UL>
-        <li>Typescript, Javascript</li>
-        <li>Next JS, React JS</li>
-        <li>Node JS</li>
-        <li>Cypress, Jest</li>
-        <li>Prisma ORM, GraphQL, MongoDB, PostgreSQL</li>
-        <li>Amazon S3, EC2 and ECR</li>
-        <li>Git, Github Actions, Github Runners</li>
-        <li>Google Chrome Extensions</li>
-        <li>Familiar with Deno, Bun</li>
-      </UL>
+       */}
 
       <H1>Experiences</H1>
       <H2>Full Stack Developer | NUWA | Remote</H2>
