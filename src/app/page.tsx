@@ -3,7 +3,6 @@ import { BsSkype } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FiArrowUpRight, FiAtSign } from "react-icons/fi";
 import IconContainer from "./IconContainer";
-import Header from "./Header";
 
 // FIXME: a single component, really? || Improve readability
 // TODO: showoff Prisma typeGraphQL as a contributor

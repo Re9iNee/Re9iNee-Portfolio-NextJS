@@ -1,9 +1,11 @@
 import { ModeToggle } from "@/components/dark-mode-toggle";
 import HomepageButton from "@/components/homepage-button";
 import { MainNav } from "@/components/main-nav";
+import Sidebar from "@/components/sidebar";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
+
 import Link from "next/link";
 
 const email = {
@@ -13,10 +15,15 @@ const email = {
 
 function Header() {
   return (
-    <header className='flex justify-between items-center sticky py-14'>
+    <header
+      className='flex justify-between gap-8 items-center px-2 py-14 sticky
+      md:flex-row md:gap-0 md:px-4'
+    >
       <HomepageButton />
 
-      <div className='flex gap-4 cursor-pointer items-center'>
+      <Sidebar />
+
+      {/* <div className='flex flex-col gap-4 cursor-pointer items-center'>
         <Link
           href={`mailto:attarzadeh76@gmail.com?subject=${email.subject}&body=${email.body}`}
           prefetch={false}
@@ -32,7 +39,7 @@ function Header() {
         <MainNav />
 
         <ModeToggle />
-      </div>
+      </div> */}
     </header>
   );
 }

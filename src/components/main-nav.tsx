@@ -28,7 +28,10 @@ export function MainNav({
 
   return (
     <nav
-      className={cn("flex items-center space-x-4 lg:space-x-6", className)}
+      className={cn(
+        "flex flex-col items-center justify-center gap-2",
+        className
+      )}
       {...props}
     >
       {links.map(({ href, text }) => {
@@ -36,7 +39,7 @@ export function MainNav({
           <Link
             key={href}
             href={href}
-            className={`text-sm font-medium transition-colors hover:text-primary text-muted-foreground ${
+            className={`text-sm font-medium transition-colors hover:text-primary text-muted-foreground hover:bg-neutral-200 rounded-sm cursor-pointer p-2 ${
               pathname === href && "text-primary"
             }`}
           >
