@@ -16,7 +16,7 @@ const email = {
 function Header() {
   return (
     <header
-      className='flex justify-between gap-8 items-center px-2 py-14 sticky
+      className='flex justify-between gap-8 items-center px-2 py-14 sticky top-0 
       md:flex-row md:gap-0 md:px-4'
     >
       <HomepageButton />

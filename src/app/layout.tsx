@@ -20,9 +20,8 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-          "w-screen max-w-screen-2xl mx-auto"
+          "w-screen max-w-screen-2xl mx-auto min-h-screen bg-background font-sans antialiased box-border bg-red-500",
+          fontSans.variable
         )}
       >
         <ThemeProvider
